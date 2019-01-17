@@ -29,3 +29,44 @@ git remote add origin https://github.com/CmmdrYale/Exercises.git
 git push -u origin master
 
 
+commit 0f2e8ab555d157bd06272ccc12171e013a180ca3
+Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
+Date:   Thu Jan 17 09:19:49 2019 +0100
+
+    File commited
+
+commit 82bf8070d02feee7544cd8b1786536351f4285a4
+Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
+Date:   Thu Jan 17 09:14:54 2019 +0100
+
+    File commited
+
+commit dc54ef2c77bfdcbb9f5f1d4115530c27d3c846e8
+Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
+Date:   Thu Jan 17 09:12:27 2019 +0100
+
+    File commited
+
+commit 9180a0201a27a09a0a912d3b07c1cf66d1431893
+Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
+Date:   Thu Jan 17 09:10:13 2019 +0100
+
+    File commited
+
+commit e2fbd44c15bee994db1f150a05e3456bb962b249
+Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
+Date:   Thu Jan 17 09:06:57 2019 +0100
+
+    File commited
+
+commit 23e551cebd01c24ff9f53f07d0d59c8dbaf9db44
+Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
+Date:   Thu Jan 17 08:42:53 2019 +0100
+
+    Files are up to date
+
+commit 89481849253ca7cd6a7b5e4799cdf00a421b69f4
+Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
+Date:   Thu Jan 17 08:40:00 2019 +0100
+
+    Changes have been forwarded to git
