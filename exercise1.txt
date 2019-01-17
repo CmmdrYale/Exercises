@@ -1,0 +1,8 @@
+git init
+gedit Readme.txt &
+-- modify something in gedit & save
+git add Readme.txt
+git status
+git commit -m "Changes have been forwarded to git"
+git reset
+git status
