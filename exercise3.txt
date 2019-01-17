@@ -1,0 +1,21 @@
+UNF		DB(PatientNo, PatientName, BedNo, WardNo, WardName, DrugNo, DrugName, DrugDesc, DrugDos, AdminMethod, Units, StartDate, EndDate
+
+1NF 		DB(PatientNo, PatientName, BedNo, WardNo, WardName, DrugNo, DrugName, DrugDesc, DrugDos, AdminMethod, Units, StartDate, EndDate)
+		candidate keys(PatientNo, BedNo, DrugNo, StartDate, EndDate
+
+2NF		Patient(PatientNo, PatientName, BedNo, WardNo, WardName)
+		keys(PatientNo, BedNo, WardNo)
+			Drugs(DrugNo, DrugName, DrugDescr, Units, StartDate, EndDate)
+		keys(DrugNo, StartDate)
+		
+		imagine: Nurse requests treatment information on computer, want to know who starts cure today or which cure ends today. This regards the Date, DrugNo, Drugname, Administration type and units required to be administrated
+		
+			Treatment(StartDate, EndDate, DrugNo, DrugName, AdminMethod, Units)
+		keys(StartDate, DrugNo)
+
+3NF = 2NF
+
+BCNF = 3NF
+			
+			
+			
