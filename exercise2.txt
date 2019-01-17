@@ -1,0 +1,18 @@
+UNF -> DB(staffNo, dentistName, patientNo, patientName, appointment, surgeryNo)
+
+1NF (elimination repeating groups) -> DB(staffNo, denstistName, patientNo, patientName, apptTime, apptDate, surgeryNo)
+	KEYS(staffNo, apptDate, apptTime)
+
+2NF (setting relations) 
+		Appointment(StaffNo, apptDate, apptTime, patientNo, patientName)
+		Surgery(staffNo, apptDate, surgeryNo)
+		Dentist(staffNo, dentistName)
+	KEYS(staffNo, apptDate, apptTime - staffNo, apptDate - staffNo)
+	
+3NF 	Dentist(staffNo, dentistName)
+		Surgery(StaffNo, apptDate, surgeryNo)
+		Patient(patientNo, patientName)
+		Appointment(StaffNo, apptDate, apptTime, patientNo)
+	KEYS(staffNo - StaffNo, apptDate - patientNo - StaffNo, apptDate, apptTIme)
+	
+	!! There are NO PRIMARY or FOREIGN KEYS for normalization :-) !!
