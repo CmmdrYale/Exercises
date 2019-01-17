@@ -1,0 +1,74 @@
+mysql> CREATE DATABASE vacation;
+mysql> show databases;
+mysql> exit
+$ mysql vacation < vacation.sql
+$ mysql
+mysql > show databases;
+mysql > use vacation;
+mysql > show tables;
++--------------------+
+| Tables_in_vacation |
++--------------------+
+| booking            |
+| guest              |
+| hotel              |
+| room               |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT guestname, guestaddress FROM guest WHERE guestaddress like "%London" ORDER BY guestname asc;
++--------------+--------------------+
+| guestname    | guestaddress       |
++--------------+--------------------+
+| John Kay     | 56 High St, London |
+| Mike Ritchie | 18 Tain St, London |
++--------------+--------------------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT type, price FROM room where type !='single' AND price <40 ORDER BY price asc;
++--------+-------+
+| type   | price |
++--------+-------+
+| double | 15.00 |
+| double | 29.00 |
+| double | 30.00 |
+| family | 35.00 |
+| family | 39.00 |
++--------+-------+
+5 rows in set (0.00 sec)
+
+mysql> SELECT hotelno, guestno, datefrom, dateto, roomno FROM booking WHERE dateto is NULL;
++---------+---------+------------+--------+--------+
+| hotelno | guestno | datefrom   | dateto | roomno |
++---------+---------+------------+--------+--------+
+| ch01    |   10006 | 2019-04-21 | NULL   |   1101 |
+| dc01    |   10003 | 2019-05-20 | NULL   |   1001 |
+| fb01    |   10001 | 2019-05-01 | NULL   |    701 |
++---------+---------+------------+--------+--------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT avg(price) FROM room;
++------------+
+| avg(price) |
++------------+
+|  35.748333 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT sum(price) FROM room WHERE type = 'double';
++------------+
+| sum(price) |
++------------+
+|     160.00 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM booking WHERE YEAR(dateto)-YEAR(datefrom) >= 1 OR (MONTH(datefrom) <= 8 AND MONTH(dateto) >= 8);
++---------+---------+------------+------------+--------+
+| hotelno | guestno | datefrom   | dateto     | roomno |
++---------+---------+------------+------------+--------+
+| fb02    |   10003 | 2019-04-05 | 2020-04-04 |   1001 |
+| fb02    |   10005 | 2019-05-12 | 2030-05-04 |   1101 |
++---------+---------+------------+------------+--------+
+2 rows in set (0.00 sec)
+
