@@ -24,3 +24,8 @@ Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
 Date:   Thu Jan 17 08:40:00 2019 +0100
 
     Changes have been forwarded to git
+
+git remote add origin https://github.com/CmmdrYale/Exercises.git
+git push -u origin master
+
+
