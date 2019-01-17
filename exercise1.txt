@@ -6,28 +6,15 @@ git status
 git commit -m "Changes have been forwarded to git"
 git reset
 git status
-
-commit e2fbd44c15bee994db1f150a05e3456bb962b249
-Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
-Date:   Thu Jan 17 09:06:57 2019 +0100
-
-    File commited
-
-commit 23e551cebd01c24ff9f53f07d0d59c8dbaf9db44
-Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
-Date:   Thu Jan 17 08:42:53 2019 +0100
-
-    Files are up to date
-
-commit 89481849253ca7cd6a7b5e4799cdf00a421b69f4
-Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
-Date:   Thu Jan 17 08:40:00 2019 +0100
-
-    Changes have been forwarded to git
-
 git remote add origin https://github.com/CmmdrYale/Exercises.git
 git push -u origin master
 
+
+commit 10cde8b9b621617585f0eaff39c71ec5b47d1836
+Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
+Date:   Thu Jan 17 09:20:24 2019 +0100
+
+    File commited
 
 commit 0f2e8ab555d157bd06272ccc12171e013a180ca3
 Author: Yael Vanden Abeele <yael.vanden.abeele@student.howest.be>
